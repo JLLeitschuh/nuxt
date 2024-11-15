@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   release-pr:
-    if: github.repository == 'nuxt/nuxt' && github.event.issue.pull_request && github.event.comment.body == '/trigger release'
+    if: github.repository == 'JLLeitschuh/nuxt' && github.event.issue.pull_request && github.event.comment.body == '/trigger release'
     concurrency:
       group: release
     permissions:
